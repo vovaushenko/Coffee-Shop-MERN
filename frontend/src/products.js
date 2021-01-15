@@ -65,7 +65,7 @@ const products = [
     },
     {
         _id: '6',
-        name: ' Commercial Espresso Machine',
+        name: 'Espresso Machine',
         image: './images/espresso-machine.jpg',
         description:
             'This commercial espresso machine combines the best of both worlds: classic, time-tested elements, as well as modern time-saving features.',
