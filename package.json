@@ -1,0 +1,22 @@
+{
+    "name": "coffee-shop",
+    "version": "1.0.0",
+    "description": "MERN coffee shopping app",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon backend/server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vovaushenko/Coffee-Shop-MERN.git"
+    },
+    "author": "Vova Ushenko",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/vovaushenko/Coffee-Shop-MERN/issues"
+    },
+    "homepage": "https://github.com/vovaushenko/Coffee-Shop-MERN#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
