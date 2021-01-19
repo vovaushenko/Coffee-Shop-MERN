@@ -1,6 +1,5 @@
 const products = [
     {
-        _id: '1',
         name: 'Siemens Coffee Machine',
         image: '/images/coffee-machine-siemens.jpg',
         description:
@@ -13,7 +12,6 @@ const products = [
         numReviews: 12,
     },
     {
-        _id: '2',
         name: 'Phillips Coffee Machine',
         image: '/images/Coffee-machine.jpg',
         description:
@@ -26,7 +24,6 @@ const products = [
         numReviews: 8,
     },
     {
-        _id: '3',
         name: 'Moka Pot',
         image: '/images/geyser.jpg',
         description:
@@ -39,7 +36,6 @@ const products = [
         numReviews: 12,
     },
     {
-        _id: '4',
         name: 'Turka Pot',
         image: '/images/turka.jpg',
         description: 'Thickest Copper Coffee Pot with Wooden Handle. Made in Turkey.',
@@ -51,7 +47,6 @@ const products = [
         numReviews: 12,
     },
     {
-        _id: '5',
         name: 'Cafflano Kompresso',
         image: '/images/cafflano-kompresso.jpg',
         description:
@@ -64,7 +59,6 @@ const products = [
         numReviews: 10,
     },
     {
-        _id: '6',
         name: 'Espresso Machine',
         image: '/images/espresso-machine.jpg',
         description:
