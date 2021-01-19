@@ -4,6 +4,7 @@ import colors from 'colors';
 import connectDB from './config/db.js';
 
 import productRoutes from './routes/productRoutes.js';
+import { errorHandler, notFound } from './middleware/errorMiddleware.js';
 
 dotenv.config();
 
@@ -11,13 +12,20 @@ connectDB();
 
 const app = express();
 
-////////////// ROUTES /////////////////
+////////////////////////// ROUTES /////////////////////////////
 app.get('/', (req, res) => {
   res.send('API is running... 😉');
 });
 
-// mount to products
+//@desc  mount to products
 app.use('/api/products', productRoutes);
+
+////////////////////////MIDDLEWARE////////////////////////////
+
+// @desc  error handlers
+app.use(notFound);
+
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 
