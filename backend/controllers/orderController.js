@@ -6,7 +6,7 @@ import Order from '../models/productModel.js';
 // @access  Private
 const addOrderItems = asyncHandler(async (req, res) => {
   const {
-    oderItems,
+    orderItems,
     shippingAddress,
     paymentMethod,
     itemsPrice,
@@ -21,7 +21,7 @@ const addOrderItems = asyncHandler(async (req, res) => {
     return;
   } else {
     const order = new Order({
-      oderItems,
+      orderItems,
       user: req.user._id,
       shippingAddress,
       paymentMethod,
