@@ -1,5 +1,5 @@
 import asyncHandler from 'express-async-handler';
-import Order from '../models/productModel.js';
+import Order from '../models/orderModel.js';
 
 // @desc  Create new order
 // @route  POST /api/orders
@@ -21,8 +21,8 @@ const addOrderItems = asyncHandler(async (req, res) => {
     return;
   } else {
     const order = new Order({
-      orderItems,
       user: req.user._id,
+      orderItems,
       shippingAddress,
       paymentMethod,
       itemsPrice,
@@ -36,5 +36,4 @@ const addOrderItems = asyncHandler(async (req, res) => {
     res.status(201).json(createdOrder);
   }
 });
-
 export { addOrderItems };
