@@ -1,5 +1,6 @@
 import express from 'express';
-import { getProductById, getProducts } from '../controllers/productController.js';
+import { deleteProduct, getProductById, getProducts } from '../controllers/productController.js';
+import { protect, isAdmin } from '..//middleware/authMiddleware.js';
 
 const router = express.Router();
 
@@ -7,6 +8,6 @@ const router = express.Router();
 router.route('/').get(getProducts);
 
 // @desc  Fetch SINGLE product
-router.route('/:id').get(getProductById);
+router.route('/:id').get(getProductById).delete(protect, isAdmin, deleteProduct);
 
 export default router;
