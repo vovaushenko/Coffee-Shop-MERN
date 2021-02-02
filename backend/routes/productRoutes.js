@@ -19,7 +19,7 @@ router.route('/').get(getProducts).post(protect, isAdmin, createProduct);
 router.route('/:id/reviews').post(protect, createProductReview);
 
 // @desc Get Top-Rated Products
-router.get('/top', getProducts);
+router.get('/top', getTopProducts);
 
 // @desc  Fetch SINGLE product
 router
