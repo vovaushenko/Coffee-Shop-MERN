@@ -30,7 +30,7 @@ const ProductScreen = ({ history, match }) => {
       setRating(0);
       setComment('');
 
-      dispatch(PRODUCT_CREATE_REVIEW_RESET);
+      dispatch({ type: PRODUCT_CREATE_REVIEW_RESET });
     }
 
     dispatch(listProductDetails(match.params.id));
