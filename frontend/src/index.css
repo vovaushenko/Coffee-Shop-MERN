@@ -19,6 +19,19 @@ h2 {
   margin: 0.1rem;
 }
 
+.card-img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-img {
+    max-width: auto;
+    object-fit: cover;
+    height: auto;
+  }
+}
 /* carousel */
 .carousel-item-next,
 .carousel-item-prev,
